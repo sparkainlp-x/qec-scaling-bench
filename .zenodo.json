@@ -1,0 +1,57 @@
+{
+  "title": "qec-scaling-bench: a classical toy simulation of surface-code memory scaling",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "publication_date": "2026-10-07",
+  "description": "<p><strong>Classical toy simulation only.</strong> A seeded Monte Carlo study, run on an ordinary classical CPU with the Stim stabilizer-circuit simulator and the PyMatching decoder, of Stim's rotated surface-code and repetition-code memory circuits at distances 3, 5 and 7 with d, 2d and 4d syndrome rounds, under an idealized independent Pauli/readout noise model: six gate/readout points plus an off-grid held-out profile with two independent seeds, an unencoded one-qubit reference and zero-noise controls, 20,000 shots per condition.</p><p>Reports memory-failure counts with Wilson intervals, an IID symmetric-flip-derived per-round estimate, and independent two-sample bootstrap intervals for distance-to-distance ratios. Seeds are SHA-256-derived per condition; committed results carry SHA-256 checksums and CI re-runs the full sweep.</p><p>No quantum hardware was used, nothing was measured, and nothing here demonstrates quantum error correction, fault tolerance or any hardware capability. The results must not be compared with experimental results.</p>",
+  "creators": [
+    {
+      "name": "Brisson, Jean-François",
+      "orcid": "0009-0000-9778-5374",
+      "affiliation": "Spark AI NLP, Fredericton, New Brunswick, Canada"
+    }
+  ],
+  "license": "AGPL-3.0-only",
+  "access_right": "open",
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "spark-ai-nlp"
+    }
+  ],
+  "keywords": [
+    "classical simulation",
+    "Monte Carlo",
+    "surface code",
+    "repetition code",
+    "Stim",
+    "PyMatching",
+    "Wilson interval",
+    "bootstrap",
+    "reproducibility",
+    "research software"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sparkainlp-x/qec-scaling-bench",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.22331/q-2021-07-06-497",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.22331/q-2025-01-20-1600",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    }
+  ],
+  "references": [
+    "Gidney, C. (2021). Stim: a fast stabilizer circuit simulator. Quantum, 5, 497. https://doi.org/10.22331/q-2021-07-06-497",
+    "Higgott, O., & Gidney, C. (2025). Sparse Blossom: correcting a million errors per core second with minimum-weight matching. Quantum, 9, 1600. https://doi.org/10.22331/q-2025-01-20-1600"
+  ]
+}

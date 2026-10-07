@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. It is a classical toy simulation; it reports no hardware results."
+type: software
+title: "qec-scaling-bench: a classical toy simulation of surface-code memory scaling"
+version: 0.1.0
+date-released: "2026-10-07"
+license: AGPL-3.0-only
+repository-code: "https://github.com/sparkainlp-x/qec-scaling-bench"
+authors:
+  - family-names: "Brisson"
+    given-names: "Jean-François"
+    orcid: "https://orcid.org/0009-0000-9778-5374"
+    affiliation: "Spark AI NLP, Fredericton, New Brunswick, Canada"
+abstract: >-
+  A seeded classical Monte Carlo simulation, run with the Stim stabilizer-circuit
+  simulator and the PyMatching decoder on an ordinary CPU, of Stim's rotated
+  surface-code and repetition-code memory circuits at distances 3, 5 and 7 with
+  d, 2d and 4d syndrome rounds under an idealized independent Pauli/readout noise
+  model (six gate/readout points plus an off-grid held-out profile with two seeds).
+  It reports Wilson intervals, an IID symmetric-flip-derived per-round estimate and
+  independent two-sample bootstrap intervals for distance-to-distance ratios.
+  No quantum hardware was used and nothing here demonstrates quantum error
+  correction or fault tolerance.
+keywords:
+  - classical-simulation
+  - monte-carlo
+  - surface-code
+  - repetition-code
+  - stim
+  - pymatching
+  - wilson-interval
+  - bootstrap
+  - reproducibility
+  - research-software
+references:
+  - type: article
+    title: "Stim: a fast stabilizer circuit simulator"
+    authors:
+      - family-names: "Gidney"
+        given-names: "Craig"
+    journal: "Quantum"
+    volume: 5
+    start: 497
+    year: 2021
+    doi: "10.22331/q-2021-07-06-497"
+  - type: article
+    title: "Sparse Blossom: correcting a million errors per core second with minimum-weight matching"
+    authors:
+      - family-names: "Higgott"
+        given-names: "Oscar"
+      - family-names: "Gidney"
+        given-names: "Craig"
+    journal: "Quantum"
+    volume: 9
+    start: 1600
+    year: 2025
+    doi: "10.22331/q-2025-01-20-1600"

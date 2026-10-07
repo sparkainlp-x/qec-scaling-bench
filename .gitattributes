@@ -1,0 +1,4 @@
+# Generated results are hash-checked and must never be line-ending converted.
+*.csv -text
+*.json -text
+results/SHA256SUMS -text

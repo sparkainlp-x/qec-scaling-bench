@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qec-scaling-bench"
+version = "0.1.0"
+description = "Classical toy simulation (Stim + PyMatching) of repeated-syndrome surface-code and repetition-code memory scaling; not hardware, not a QEC demonstration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE", "COMMERCIAL-LICENSE.md"]
+authors = [{ name = "Jean-François Brisson", email = "281253927+sparkainlp-x@users.noreply.github.com" }]
+keywords = ["classical-simulation", "monte-carlo", "surface-code", "repetition-code", "stim", "pymatching", "reproducibility", "wilson-interval", "bootstrap"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "stim>=1.15,<2",
+  "pymatching>=2.3,<3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/sparkainlp-x/qec-scaling-bench"
+Issues = "https://github.com/sparkainlp-x/qec-scaling-bench/issues"
+Changelog = "https://github.com/sparkainlp-x/qec-scaling-bench/blob/main/CHANGELOG.md"
+
+[project.scripts]
+qec-scaling-bench = "qec_scaling_bench:main"
+
+[tool.setuptools]
+py-modules = ["qec_scaling_bench"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

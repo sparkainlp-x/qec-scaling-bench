@@ -1,0 +1,6 @@
+# Runtime + test dependencies (same bounds as pyproject.toml).
+# Exact versions used for the committed results: stim==1.16.0 pymatching==2.4.0 numpy==2.5.3
+numpy>=1.26,<3
+stim>=1.15,<2
+pymatching>=2.3,<3
+pytest>=7
