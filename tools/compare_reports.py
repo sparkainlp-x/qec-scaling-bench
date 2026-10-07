@@ -6,8 +6,9 @@
 Exit 0 if every non-timing field is identical (same Stim version and SIMD code path),
 or, failing that, if every memory-failure count is statistically consistent with the
 committed count (two-proportion z-test, Bonferroni-corrected at family-wise alpha 0.001).
-Stim only promises bit-identical samples for the same version on the same machine, so the
-statistical fallback is what other machines (for example CI runners) can be held to.
+Stim only promises bit-identical samples for the same version on the same machine, and the
+bootstrap intervals depend on NumPy's random-stream implementation, so the statistical
+fallback is what other machines or NumPy versions (for example CI runners) can be held to.
 Exit 1 otherwise. Timing fields (*_seconds*) and software_versions are always ignored.
 """
 from __future__ import annotations
@@ -63,7 +64,10 @@ def main(argv: list[str]) -> int:
     if not differences:
         print("IDENTICAL: all non-timing fields match the committed report")
         return 0
-    print(f"NOT BIT-IDENTICAL: {len(differences)} non-timing differences (expected on a different machine/SIMD path)")
+    print(f"NOT BIT-IDENTICAL: {len(differences)} non-timing differences "
+          "(expected with a different NumPy version, which changes bootstrap intervals, or a different Stim SIMD path)")
+    for line in differences[:5]:
+        print(f"  e.g. {line}")
     a, b = _counts(committed), _counts(fresh)
     if set(a) != set(b):
         print("FAIL: the two reports cover different conditions")
