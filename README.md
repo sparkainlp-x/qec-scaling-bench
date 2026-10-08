@@ -4,7 +4,7 @@
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 [![Python 3.10–3.12](https://img.shields.io/badge/python-3.10%E2%80%933.12-blue.svg)](.github/workflows/tests.yml)
 [![Status: classical toy simulation](https://img.shields.io/badge/status-classical%20toy%20simulation-orange.svg)](#what-this-is-not)
-DOI: pending (a Zenodo DOI will be minted from the first GitHub release).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23241631.svg)](https://doi.org/10.5281/zenodo.23241631)
 
 **This is a classical toy simulation.** Every number in this repository was produced on an ordinary classical CPU by the [Stim](https://github.com/quantumlib/Stim) stabilizer-circuit simulator and the [PyMatching](https://github.com/oscarhiggott/PyMatching) decoder, under an idealized, hand-chosen noise model. No quantum computer or quantum hardware was used, nothing was measured, and nothing here demonstrates quantum error correction, fault tolerance or any hardware capability. Every reported result is classical simulation output only.
 
@@ -91,7 +91,7 @@ results/                      committed seed-1823 JSON report, trials CSV and SH
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). A DOI is pending. Please also cite Stim (Gidney, *Quantum* 5, 497 (2021), [doi:10.22331/q-2021-07-06-497](https://doi.org/10.22331/q-2021-07-06-497)) and PyMatching (Higgott & Gidney, *Quantum* 9, 1600 (2025), [doi:10.22331/q-2025-01-20-1600](https://doi.org/10.22331/q-2025-01-20-1600)).
+See [`CITATION.cff`](CITATION.cff). Archived on Zenodo: concept DOI [10.5281/zenodo.23241631](https://doi.org/10.5281/zenodo.23241631) (all versions); v0.1.0: [10.5281/zenodo.23241632](https://doi.org/10.5281/zenodo.23241632). Please also cite Stim (Gidney, *Quantum* 5, 497 (2021), [doi:10.22331/q-2021-07-06-497](https://doi.org/10.22331/q-2021-07-06-497)) and PyMatching (Higgott & Gidney, *Quantum* 9, 1600 (2025), [doi:10.22331/q-2025-01-20-1600](https://doi.org/10.22331/q-2025-01-20-1600)).
 
 ## License
 

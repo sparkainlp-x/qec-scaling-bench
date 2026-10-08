@@ -5,6 +5,14 @@ title: "qec-scaling-bench: a classical toy simulation of surface-code memory sca
 version: 0.1.0
 date-released: "2026-10-08"
 license: AGPL-3.0-only
+doi: 10.5281/zenodo.23241631
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23241631
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: 10.5281/zenodo.23241632
+    description: "Version DOI for v0.1.0"
 repository-code: "https://github.com/sparkainlp-x/qec-scaling-bench"
 authors:
   - family-names: "Brisson"
