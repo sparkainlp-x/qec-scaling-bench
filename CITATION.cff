@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below. It is a classical t
 type: software
 title: "qec-scaling-bench: a classical toy simulation of surface-code memory scaling"
 version: 0.1.0
-date-released: "2026-10-07"
+date-released: "2026-10-08"
 license: AGPL-3.0-only
 repository-code: "https://github.com/sparkainlp-x/qec-scaling-bench"
 authors:
